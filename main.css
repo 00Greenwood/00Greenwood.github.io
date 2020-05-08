@@ -2,34 +2,67 @@
 @import "fonts.css";
 
 html, body {
-    font-family: Roboto-Regular;
-    height: 100%;
-    margin: 0;
-    width: 100%;
+  font-family: Roboto-Thin;
+  background-color: #D4D3D5;
 }
 
-div {
-    padding-right: 30px;
-    width: 100%;
+.name {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  background-color: #090B27;
+  padding-left: 16px;
 }
 
-.container {
-    display: flex;
+.name h1 {
+  font-size: 48px;
+  font-family: Roboto-Regular;
+  color: #D4D3D5;
+  margin: 0px;
 }
 
-.main {
-    padding-left: 30px;
+.name h2 {
+  font-size: 24px;
+  color: #FFFFFC;
+  margin: 0px;
 }
 
-.nav {
-    background-color: #FFEE00;
-    width: 160px;
+.cv {
+  top: 108px;
+  left: 200px;
+  position: fixed;
+  padding-left: 16px;
 }
 
-h1 {
-    font-size: 48px;
+.cv h1 {
+  font-size: 24px;
+  font-family: Roboto-medium;
+  color: #014472;
+  margin: 0px;
 }
 
-.nav h1 {
-    padding-left: 20px;
+.cv h2 {
+  font-size: 16px;
+  color: #014472;
+  margin: 8px;
+}
+
+.leftBorder {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #090B27;
+}
+
+.rightBorder {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #090B27;
 }

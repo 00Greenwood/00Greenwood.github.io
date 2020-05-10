@@ -1,6 +1,6 @@
-@import "title.css";
+@import "Title.css";
 
-.contact {
+.Contact {
   top: 108px;
   left: 15%;
   width: 68%;
@@ -8,14 +8,14 @@
   margin: 1%;
 }
 
-.contact h1 {
+.Contact h1 {
   font-size: 24px;
   font-family: Roboto-medium;
   color: #014472;
   margin: 0px;
 }
 
-.contact h2 {
+.Contact h2 {
   font-size: 16px;
   color: #014472;
   margin: 8px;

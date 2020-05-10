@@ -1,6 +1,6 @@
-@import "title.css";
+@import "Title.css";
 
-.cv {
+.CV {
   top: 108px;
   left: 15%;
   width: 68%;
@@ -8,18 +8,18 @@
   margin: 1%;
 }
 
-.cv hr {
+.CV hr {
   width: 100%
 }
 
-.cv h1 {
+.CV h1 {
   font-size: 24px;
   font-family: Roboto-medium;
   color: #014472;
   margin: 0px;
 }
 
-.cv h2 {
+.CV h2 {
   font-size: 16px;
   color: #014472;
   margin: 8px;

@@ -1,6 +1,6 @@
-@import "main.css";
+@import "Borders.css";
 
-.title {
+.Title {
   top: 0;
   left: 0;
   height: 100px;
@@ -12,14 +12,14 @@
   z-index: 1;
 }
 
-.title h1 {
+.Title h1 {
   font-size: 48px;
   font-family: Roboto-Regular;
   color: #D4D3D5;
   margin: 0px;
 }
 
-.title h2 {
+.Title h2 {
   font-size: 24px;
   color: #D4D3D5;
   margin: 0px;

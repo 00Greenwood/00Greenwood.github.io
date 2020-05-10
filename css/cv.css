@@ -2,9 +2,14 @@
 
 .cv {
   top: 108px;
-  left: 200px;
-  position: fixed;
-  padding-left: 16px;
+  left: 15%;
+  width: 68%;
+  position: relative;
+  margin: 1%;
+}
+
+.cv hr {
+  width: 100%
 }
 
 .cv h1 {

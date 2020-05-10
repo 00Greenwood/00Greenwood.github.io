@@ -1,13 +1,15 @@
 @import "main.css";
 
 .title {
+  top: 0;
+  left: 0;
   height: 100px;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
   background-color: #090B27;
-  padding-left: 216px;
+  padding-left: 16%;
+  padding-right: 16%;
+  z-index: 1;
 }
 
 .title h1 {

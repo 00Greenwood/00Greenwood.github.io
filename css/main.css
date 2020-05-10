@@ -5,12 +5,21 @@ html, body {
   background-color: #D4D3D5;
 }
 
+html { 
+  overflow-y: scroll;
+  overflow-x: hidden; 
+}
+
+body { 
+  position: absolute; 
+}
+
 .leftBorder {
   height: 100%;
-  width: 200px;
+  width: 15%;
   position: fixed;
-  top: 100px;;
-  left: 0;
+  top: 100px;
+  left: 0%;
   background-color: #090B27;
 }
 
@@ -24,9 +33,9 @@ html, body {
 
 .rightBorder {
   height: 100%;
-  width: 200px;
+  width: 15%;
   position: fixed;
-  top: 100px;;
-  right: 0;
+  top: 100px;
+  right: 0%;
   background-color: #090B27;
 }

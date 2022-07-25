@@ -6,8 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write ."
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

@@ -6,28 +6,19 @@ import "@fontsource/roboto/700.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createTheme } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 import { Website } from "./Website";
 
-const theme = createTheme({
+const darkTheme = createTheme({
   palette: {
-    primary: {
-      light: "#718792",
-      main: "#455a64",
-      dark: "#1c313a",
-      contrastText: "#ffffff",
-    },
-    secondary: {
-      light: "#ff7961",
-      main: "#f44336",
-      dark: "#ba000d",
-      contrastText: "#000",
-    },
+    mode: "dark",
   },
 });
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Website />
+    <ThemeProvider theme={darkTheme}>
+      <Website />
+    </ThemeProvider>
   </React.StrictMode>
 );

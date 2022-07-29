@@ -5,7 +5,7 @@ import { RightPanel } from "./RightPanel";
 
 export const Website = () => {
   return (
-    <Container sx={{ backgroundColor: "primary.dark" }}>
+    <Container>
       <TopPanel />
       <Grid container>
         <Grid item>

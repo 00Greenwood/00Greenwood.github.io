@@ -1,7 +1,8 @@
-import { Avatar, Grid, Typography } from "@mui/material";
+import { Avatar, Grid, Typography, useTheme } from "@mui/material";
 import { INTRODUCTION, NAME } from "./CONSTANTS";
 
 export const TopPanel = () => {
+  const theme = useTheme();
   return (
     <Grid container>
       <Grid item xs>

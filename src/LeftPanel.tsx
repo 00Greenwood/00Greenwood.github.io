@@ -11,20 +11,18 @@ import {
 export const LeftPanel = () => {
   return (
     <>
-      <Typography variant="h6" component="div" gutterBottom>
+      <Typography variant="h6" component="div">
         {WEBSITES}
       </Typography>
       <Divider />
       <Link href={GITHUB_LINK}>
-        <GitHub />
-        <Typography variant="body1" component="div" gutterBottom>
-          {GITHUB_NAME}
+        <Typography variant="body1" component="div">
+          <GitHub /> {GITHUB_NAME}
         </Typography>
       </Link>
       <Link href={LINKEDIN_LINK}>
-        <LinkedIn />
-        <Typography variant="body1" component="div" gutterBottom>
-          {LINKEDIN_NAME}
+        <Typography variant="body1" component="div">
+          <LinkedIn /> {LINKEDIN_NAME}
         </Typography>
       </Link>
     </>

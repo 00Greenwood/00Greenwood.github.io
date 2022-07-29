@@ -6,10 +6,10 @@ export const TopPanel = () => {
   return (
     <Grid container>
       <Grid item xs>
-        <Typography variant="h3" component="div" gutterBottom>
+        <Typography variant="h3" component="div">
           {NAME}
         </Typography>
-        <Typography variant="h6" component="div" gutterBottom>
+        <Typography variant="h6" component="div">
           {INTRODUCTION}
         </Typography>
       </Grid>

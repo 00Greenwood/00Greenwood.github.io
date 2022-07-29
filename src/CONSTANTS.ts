@@ -1,4 +1,4 @@
-export const NAME = "MARCUS GREeNWOOD";
+export const NAME = "MARCUS GREENWOOD";
 export const INTRODUCTION =
   "Highly motivated, ambitious software engineer interested in advancing their career. Welcomes responsibility and enthusiastically seeks out new challenges to exercise strengths already possessed and develop new ones.";
 export const WEBSITES = "WEBSITES";

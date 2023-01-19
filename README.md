@@ -8,16 +8,16 @@ The repository containing the personal website of [Marcus Greenwood](https://00g
 
 ### Install
 
-`npm install`
+`yarn`
 
 ### Run
 
-`npm run start`
+`yarn dev`
 
-### Publish
+### Build
 
-`npm run publish`
+`yarn build`
 
-### Test
+### Preview
 
-`npm run test`
+`yarn preview`

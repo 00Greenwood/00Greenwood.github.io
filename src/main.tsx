@@ -1,24 +1,24 @@
-// Only need to import the font once at the entry point.
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createTheme, ThemeProvider } from "@mui/material";
-import { Website } from "./Website";
-
-const darkTheme = createTheme({
-  palette: {
-    mode: "dark",
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <div>Hello world!</div>,
   },
-});
+  {
+    path: '/wedding',
+    element: <div>Wedding</div>,
+  },
+  {
+    path: '/yosemite',
+    element: <div>Yosemite</div>,
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
-      <Website />
-    </ThemeProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

@@ -24,7 +24,10 @@
         "files": ["*.tsx", "*.jsx"],
         "plugins": ["react"],
         "extends": ["plugin:react/recommended"],
-        "settings": {"react": {"version" : "detect"}}
+        "settings": {"react": {"version" : "detect"}},
+        "rules": {
+          "react/react-in-jsx-scope": "off"
+        }
       }
     ],
     "parser": "@typescript-eslint/parser",

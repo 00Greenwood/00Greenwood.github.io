@@ -1,22 +1,15 @@
-import { AppBar, Typography, Button, Toolbar } from "@mui/material"
-import React from "react"
+import { AppBar, Toolbar, Button } from "@mui/material"
 
-export const NavBar = () => {
-    return <AppBar component='nav' position="static">
-        <Toolbar>
-            
-<Typography variant="h6" onClick={()=>{alert("HOME!")}}>
-            Home
-          </Typography>
+interface Page {path:string; name:string}
 
-          <Typography variant="h6" >
-            Wedding
-          </Typography>
+interface NavBarProps {
+  pages: Page[]
+}
 
-          <Typography variant="h6" >
-            Yosemite
-          </Typography>
-          </Toolbar>
-
-    </AppBar>
+export const NavBar = ({pages}: NavBarProps) => {
+      return <AppBar position="static">
+        <Toolbar >
+        {pages.map((page, index) => <Button key={index} href={page.path}>{page.name}</Button>
+        )}</Toolbar>
+      </AppBar>
 }

@@ -1,26 +1,47 @@
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Gallery } from './Gallery';
 import { NavBar } from './NavBar';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <div>Hello world!</div>,
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
   },
-  {
-    path: '/wedding',
-    element: <div>Wedding</div>,
-  },
-  {
-    path: '/yosemite',
-    element: <div>Yosemite</div>,
-  },
-]);
+});
+
+const homeRoute = {
+  path: '/',
+  name: 'Home',
+  element: <div>Home</div>,
+}
+
+const projectsRoute = {
+  path: '/projects',
+  name: 'Projects',
+  element: <div>Project</div>,
+}
+
+const galleryRoute = {
+  path: '/gallery',
+  name: 'Gallery',
+  element: <Gallery/>,
+}
+
+const routes = [
+  homeRoute, projectsRoute, galleryRoute
+]
+
+const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <NavBar/>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline>
+      <NavBar pages={routes}/>
+      <RouterProvider router={router} />
+      </CssBaseline>
+    </ThemeProvider>
   </React.StrictMode>
 );
